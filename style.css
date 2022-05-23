@@ -4,7 +4,7 @@
 	margin: 0;
 }
 
-header{
+#site-header{
     padding: 10px;
 }
 
@@ -13,12 +13,22 @@ header{
 }
 
 .nav-link{
-    margin: 0 16px;
+    margin: 8px 16px;
     padding: 0 !important;
 	color: gray;
 	font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
 }
 
 #site-main{
     margin: 3rem 8rem;
+}
+
+.nav{
+    border-bottom: 1px solid rgb(184, 181, 181);
 }
