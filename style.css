@@ -11,6 +11,9 @@
  img{
     width: 40%;
 }
+a{
+    text-decoration: none;
+}
 
 .nav-link{
     margin: 8px 16px;
@@ -20,9 +23,14 @@
     font-weight: 600;
 }
 
-.nav-item:hover{
+
+.active{
     color: blue;
     border-bottom: 2px solid blue;
+}
+
+.fs-13{
+    font-size: 13px;
 }
 
 #site-main{
