@@ -68,12 +68,60 @@ $faq = [
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <title>Google Faq</title>
+
+
 </head>
 <body>
 
-    <header></header>
-    <main></main>
+    <header>
+        <div class="row">
+            <div class="col-4 d-flex align-items-center">
+                <img src="http://static3.businessinsider.com/image/5384b5076bb3f78d6bdfdb97-800-283/google-old-2.jpg">
+                <span>
+                    <h6>Privacy & Terms</h6>
+                </span>
+            </div>
+        </div>
+        <ul class="nav">
+            <li>
+                <a class="nav-link">Overview</a>
+            </li>
+            <li>
+                <a class="nav-link">Privacy Policy</a>
+            </li>
+            <li>
+                <a class="nav-link">Terms of Service</a>
+            </li>
+            <li>
+                <a class="nav-link">Technologies</a>
+            </li>
+            <li>
+                <a class="nav-link">FAQ</a>
+            </li>
+        </ul>
+        <hr>
+    </header>
+    <main id="site-main">
+        <div class="container">
+
+            <?php foreach($faq as $key => $value){ ?>
+
+                <h4>
+                    <?php echo $value["question"]?>
+                </h4>
+
+                <p>
+                    <?php echo $value["reply"]?>
+                </p>
+
+            <?php } ?>
+            
+        </div>
+
+
+    </main>
     <footer></footer>
     
 </body>
