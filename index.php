@@ -78,7 +78,7 @@ $faq = [
             <div class="col-4 d-flex align-items-center">
                 <img src="http://static3.businessinsider.com/image/5384b5076bb3f78d6bdfdb97-800-283/google-old-2.jpg">
                 <span>
-                    <h6 class="ps-2">Privacy & Terms</h6>
+                    <h4 class="ps-2">Privacy & Terms</h4>
                 </span>
             </div>
         </div>
@@ -97,7 +97,7 @@ $faq = [
                 <a class="nav-link">Technologies</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link">FAQ</a>
+                <a class="nav-link txt-blue">FAQ</a>
             </li>
         </ul>
         <!-- nav-menu -->
@@ -113,7 +113,7 @@ $faq = [
                 </h4>
 
                 <p class="fs-13">
-                    <?php echo $value["reply"]?>
+                    <?php echo nl2br($value["reply"])?>
                 </p>
             <?php } ?>
 
